@@ -1,7 +1,9 @@
 console.log("Learning Modules.....")
 
+
+
 // 👉Example 1
-// import { sum, sub } from "./calc.js";
+// import {sum,sub} from "./calc.js"
 
 // 👉Example 2
 // import { sum as add, sub } from "./calc.js";
@@ -23,7 +25,7 @@ console.log("Learning Modules.....")
 // import * as combine from "./combine.js";
 
 
-// 👉Example 8
+// 👉Example 8  Static import
 // import {sayHi,sayHola} from "./greeting.js";
 
 // 👉Example 9 (Dynamic import)
@@ -67,11 +69,17 @@ console.log("Learning Modules.....")
 
 // ✅9 Dynamic import
 
-// let myMode = false;
-// if (myMode) {
-//     const { sayHi, sayHola } = await import("./greeting.js");
-//     sayHi();
-//     sayHola();
-// } else {
-//     console.log("No greetings")
-// }
+let myMode = true;
+if (myMode) {
+    const { sayHi, sayHola } = await import("./greeting.js");
+    sayHi();
+    sayHola();
+} else {
+    console.log("No greetings")
+}
+
+
+// console.log(city)
+
+// console.log(myFunc())
+
