@@ -14,6 +14,7 @@ console.log("Learning Modules.....")
 
 // 👉Example 4
 // import { default as sayMyName } from "./whoami.js";
+// import sayMyName from "./whoami.js";
 
 // 👉Example 5
 // import { default as myChannelName } from "./whoami.js";
@@ -69,7 +70,7 @@ console.log("Learning Modules.....")
 
 // ✅9 Dynamic import
 
-// let myMode = true;
+// let myMode = false;
 // if (myMode) {
 //     const { sayHi, sayHola } = await import("./greeting.js");
 //     sayHi();
