@@ -9,7 +9,7 @@ console.log("Learning Modules.....")
 // import { sum as add, sub } from "./calc.js";
 
 
-// 👉Example 3
+// 👉Example 3 (namespace)
 // import * as calc from "./calc.js";
 
 // 👉Example 4
@@ -69,17 +69,34 @@ console.log("Learning Modules.....")
 
 // ✅9 Dynamic import
 
-let myMode = true;
-if (myMode) {
-    const { sayHi, sayHola } = await import("./greeting.js");
-    sayHi();
-    sayHola();
-} else {
-    console.log("No greetings")
-}
+// let myMode = true;
+// if (myMode) {
+//     const { sayHi, sayHola } = await import("./greeting.js");
+//     sayHi();
+//     sayHola();
+// } else {
+//     console.log("No greetings")
+// }
 
 
 // console.log(city)
 
 // console.log(myFunc())
 
+
+//✅ Example 10 
+// const promises=Promise.all(
+//     [
+//         await import("./greeting.js"), 
+//         await import("./calc.js")
+//     ]
+//     );
+
+//     // console.log(promises);
+
+// promises.then(result=>{
+//     // console.log(result);
+//     console.log(result[0].sayHi())
+//     console.log(result[0].sayHola())
+//     console.log(result[1].sum(2,3))
+// })
